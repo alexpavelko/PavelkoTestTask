@@ -4,17 +4,7 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
     <changeSet id="2" author="Oleksandr Pavelko">
         <insert tableName="number_data">
-            <column name="num_value" valueNumeric="1"/>
-        </insert>
-    </changeSet>
-    <changeSet id="3" author="Oleksandr Pavelko">
-        <insert tableName="number_data">
-            <column name="num_value" valueNumeric="2"/>
-        </insert>
-    </changeSet>
-    <changeSet id="4" author="Oleksandr Pavelko">
-        <insert tableName="number_data">
-            <column name="num_value" valueNumeric="3"/>
+            <column name="num_value" valueNumeric="0"/>
         </insert>
     </changeSet>
 </databaseChangeLog>

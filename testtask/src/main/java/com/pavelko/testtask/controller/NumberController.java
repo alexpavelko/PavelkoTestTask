@@ -1,35 +1,27 @@
 package com.pavelko.testtask.controller;
 
+import com.pavelko.testtask.service.CounterService;
+import com.pavelko.testtask.service.ICounterService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.web.bind.annotation.*;
-import com.pavelko.testtask.model.NumberEntity;
-import com.pavelko.testtask.repository.NumberRepository;
-
-import java.util.Optional;
-
-
 
 @RestController
-@RequestMapping("/numbers")
+@RequestMapping("/")
 public class NumberController {
-
-    private final NumberRepository numberRepository;
+    private final ICounterService counterService;
 
     @Autowired
-    public NumberController(NumberRepository numberRepository) {
-        this.numberRepository = numberRepository;
+    public NumberController(CounterService counterService) {
+        this.counterService = counterService;
     }
 
-    @PostMapping
-    public NumberEntity saveNumber(@RequestBody int value) {
-        NumberEntity number = new NumberEntity();
-        number.setValue(value);
-        return numberRepository.save(number);
+    @PostMapping("counter/{value}")
+    public boolean overWriteCounter(@PathVariable int value) {
+        return counterService.overWriteCounter(value);
     }
 
-    @GetMapping("/{id}")
-    public Optional<NumberEntity> getNumber(@PathVariable Long id) {
-        return numberRepository.findById(id);
+    @GetMapping("counter")
+    public Integer getNumber() {
+        return counterService.getCounter();
     }
 }
