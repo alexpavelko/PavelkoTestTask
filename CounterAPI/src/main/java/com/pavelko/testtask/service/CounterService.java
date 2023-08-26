@@ -1,33 +1,33 @@
 package com.pavelko.testtask.service;
 
-import com.pavelko.testtask.model.NumberEntity;
-import com.pavelko.testtask.repository.NumberRepository;
+import com.pavelko.testtask.model.Counter;
+import com.pavelko.testtask.repository.CounterRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CounterService implements ICounterService {
-    private final NumberRepository numberRepository;
+    private final CounterRepository counterRepository;
 
     @Autowired
-    public CounterService(NumberRepository numberRepository) {
-        this.numberRepository = numberRepository;
+    public CounterService(CounterRepository counterRepository) {
+        this.counterRepository = counterRepository;
     }
 
     @Override
     public void deletePreviousCounter() {
-        if (!numberRepository.findAll().isEmpty()) {
-            numberRepository.deleteAll();
+        if (!counterRepository.findAll().isEmpty()) {
+            counterRepository.deleteAll();
         }
     }
 
     @Override
     public boolean overWriteCounter(int value) {
         deletePreviousCounter();
-        NumberEntity entityToSave = new NumberEntity();
+        Counter entityToSave = new Counter();
         entityToSave.setValue(value);
         try {
-            numberRepository.save(entityToSave);
+            counterRepository.save(entityToSave);
             return true;
         } catch (IllegalArgumentException iae) {
             return false;
@@ -36,7 +36,7 @@ public class CounterService implements ICounterService {
 
     @Override
     public Integer getCounter() {
-        return numberRepository.findAll().get(0).getValue();
+        return counterRepository.findAll().get(0).getValue();
     }
 }
 

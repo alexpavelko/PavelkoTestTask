@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/")
-public class NumberController {
+public class CounterController {
     private final ICounterService counterService;
 
     @Autowired
-    public NumberController(CounterService counterService) {
+    public CounterController(CounterService counterService) {
         this.counterService = counterService;
     }
 

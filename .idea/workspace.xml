@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9e58862b-9186-4a31-8602-4cfe39921a07" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/testtask/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testtask/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testtask/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testtask/src/main/java/com/pavelko/testtask/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testtask/src/main/java/com/pavelko/testtask/controller/NumberController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testtask/src/main/java/com/pavelko/testtask/model/NumberEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testtask/src/main/java/com/pavelko/testtask/repository/NumberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testtask/src/main/java/com/pavelko/testtask/service/CounterService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testtask/src/main/java/com/pavelko/testtask/service/ICounterService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testtask/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testtask/src/main/resources/db/changelog/001-initial-schema.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testtask/src/main/resources/db/changelog/002-insert-data.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testtask/src/main/resources/db/changelog/db.changelog-master.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2UWE9uhRnIAa6ORptkHzcdS3ZfW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Alex/Downloads/CounterAPI",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e58862b-9186-4a31-8602-4cfe39921a07" name="Changes" comment="" />
+      <created>1693046790623</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693046790623</updated>
+      <workItem from="1693046791098" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
