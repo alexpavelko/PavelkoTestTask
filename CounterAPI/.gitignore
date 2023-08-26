@@ -28,3 +28,8 @@ gradle/
 /gradle
 /test/
 test/
+
+.idea
+/.idea/
+.idea/
+/.idea
